@@ -16,3 +16,13 @@
 (straight-use-package 'elixir-mode)
 (straight-use-package 'ox-asciidoc)
 (straight-use-package 'ox-hugo)
+
+;; org / agenda
+(require 'ol)
+
+(org-link-set-parameters "hook"
+                         :follow #'org-hook-open)
+
+(defun org-hook-open (path _)
+  "Visit hook link on PATH"
+  (shell-command (concat "/usr/bin/open hook:" path)))
