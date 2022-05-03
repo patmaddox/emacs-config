@@ -5,4 +5,4 @@
 (setq org-agenda-files
       '("~/org"))
 (setq org-todo-keywords
-      '((sequence "TODO" "NEXT" "WAITING" "|" "DONE")))
+      '((sequence "TODO" "NEXT" "WAIT" "|" "DONE")))
